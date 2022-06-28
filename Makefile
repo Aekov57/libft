@@ -86,6 +86,13 @@ PRINTF_SRC = ft_printf_hex\
 
 ALL_SRC += $(addprefix Ft_Printf/, $(addsuffix .c, $(PRINTF_SRC)))
 
+# ============================================================================ #
+
+GNL_SRC = get_next_line_utils\
+		  get_next_line\
+
+ALL_SRC += $(addprefix GetNextLine/, $(addsuffix .c, $(GNL_SRC)))
+
 OBJS = $(ALL_SRC:.c=.o)
 
 # ============================================================================ #
