@@ -24,12 +24,12 @@ int	ft_atoi(const char *str)
 	if (*str == '-' || *str == '+')
 		if (*str++ == '-')
 			l = -1;
-	while (ft_isdigit(*str) && result >= INT32_MIN && result <= INT32_MAX)
+	while (ft_isdigit(*str) && result >= INT_MIN && result <= INT_MAX)
 		result = result * 10 + *str++ - '0';
 	result *= l;
-	if (result < INT32_MIN)
+	if (result < INT_MIN)
 		return (0);
-	if (result > INT32_MAX)
+	if (result > INT_MAX)
 		return (-1);
 	return (result);
 }
